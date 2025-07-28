@@ -44,7 +44,7 @@ public class RedBusAutomation {
 
 		WebElement locationSearchResult = searchList.get(0);
 
-// Channing of Webelement
+//      Channing of Webelement
 		By locationNameLocator = By.xpath(".//div[contains(@class,\"listHeader\")]");
 
 		List<WebElement> locationList = locationSearchResult.findElements(locationNameLocator);
@@ -95,7 +95,7 @@ public class RedBusAutomation {
 		By primoButtonLocator = By.xpath("//div[contains(text(), \"Primo\")]");
 		WebElement primosearchButton = wait.until(ExpectedConditions.elementToBeClickable(primoButtonLocator));
 		primosearchButton.click();
-		
+
 		Thread.sleep(1000);
 
 		By TimelableButtonLocator = By.xpath("//div[contains(@class, 'label') and contains(text(), '18:00-24:00')]");
@@ -128,7 +128,7 @@ public class RedBusAutomation {
 //		List<WebElement> newRowList = wait.until(ExpectedConditions.numberOfElementsToBeMoreThan(tuppleWrapperLocator, rowList.size()));
 //		System.out.println("Total Number of Buses " + newRowList.size());
 
-		while (true) {  //Lazy Loading
+		while (true) { // Lazy Loading
 			// Get the rows from the pages
 			List<WebElement> rowList = wait
 					.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(tuppleWrapperLocator));

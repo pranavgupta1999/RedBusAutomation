@@ -14,7 +14,29 @@
 			<version>4.34.0</version>
 		</dependency>
 	</dependencies>
-	
-	
-	
+	<build>
+		<!-- To define the plugin version in your parent POM -->
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>3.14.0</version>
+				</plugin>
+
+			</plugins>
+		</pluginManagement>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.14.0</version>
+				<configuration>
+					<!-- put your configurations here -->
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+
 </project>
